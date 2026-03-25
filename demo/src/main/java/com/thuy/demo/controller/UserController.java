@@ -4,6 +4,9 @@ package com.thuy.demo.controller;
 import com.thuy.demo.domain.User;
 import com.thuy.demo.repository.UserRepository;
 import com.thuy.demo.service.UserService;
+
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -22,6 +25,10 @@ public class UserController {
     
     @RequestMapping("/")
     public String getHomePage(Model model){
+        List<User> arrUsers = this.userService.getAllUsersByEmail("1@gmail.com");
+        System.out.println(arrUsers);
+
+
         model.addAttribute("eric","test");
         model.addAttribute("hoidanit","from controller with model");
         return "hello";
