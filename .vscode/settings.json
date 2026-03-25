@@ -1,4 +1,12 @@
 {
-  "cSpell.words": ["laptopshop", "springframework", "thuy"],
+  "cSpell.words": [
+    "Configurer",
+    "glassfish",
+    "jstl",
+    "laptopshop",
+    "springframework",
+    "taglib",
+    "thuy"
+  ],
   "java.configuration.updateBuildConfiguration": "interactive"
 }
