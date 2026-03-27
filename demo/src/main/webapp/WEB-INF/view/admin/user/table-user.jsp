@@ -1,4 +1,4 @@
-<%@ page contentType="text/html" pageEncoding="UTF-8" %> <%@ taglib prefix="c"
+a<%@ page contentType="text/html" pageEncoding="UTF-8" %> <%@ taglib prefix="c"
 uri="http://java.sun.com/jsp/jstl/core" %> <%@ taglib
 uri="http://www.springframework.org/tags/form" prefix="form" %>
 
@@ -49,7 +49,7 @@ uri="http://www.springframework.org/tags/form" prefix="form" %>
                     <a href="/admin/user/${user.id}" class="btn btn-success">View</a>
 
                     <a href="/admin/user/update/${user.id}" class="btn btn-warning">Update</a>
-                    <button class="btn btn-danger">Delete</button>
+                    <a href="/admin/user/delete/${user.id}" class="btn btn-danger">Delete</a>
                   </td>
                 </tr>
               </c:forEach>
